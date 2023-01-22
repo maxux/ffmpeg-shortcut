@@ -6,7 +6,7 @@ if len(sys.argv) < 5:
     sys.exit(1)
 
 timefrom = sys.argv[3]
-timeto = sys.argv[2]
+timeto = sys.argv[4]
 
 dtfrom = datetime.strptime(timefrom, '%H:%M:%S')
 dtto = datetime.strptime(timeto, '%H:%M:%S')
