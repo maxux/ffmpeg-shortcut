@@ -16,4 +16,4 @@ fi
 echo "[+] converting: $source"
 echo "[+] destination: $target"
 
-ffmpeg -i "$source" -acodec copy -vcodec copy -strict -2 "$target"
+ffmpeg -i "$source" -acodec copy -vcodec copy -map 0 -strict -2 "$target"
