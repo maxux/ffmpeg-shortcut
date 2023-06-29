@@ -2,7 +2,7 @@ from datetime import datetime
 import sys
 
 if len(sys.argv) < 5:
-    print("Usage: %s <source-file> <destination-file> <source-time> <length>" % sys.argv[0])
+    print("Usage: %s <source-file> <destination-file> <source-time> <end-time>" % sys.argv[0])
     sys.exit(1)
 
 timefrom = sys.argv[3]
