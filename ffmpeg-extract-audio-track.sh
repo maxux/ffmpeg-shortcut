@@ -6,6 +6,7 @@ target="$3"
 
 if [ "$source" == "" ]; then
     echo "[-] missing input"
+    exit 1
 fi
 
 if [ "$target" == "" ]; then
