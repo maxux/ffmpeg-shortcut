@@ -10,7 +10,7 @@ if [ "$source" == "" ]; then
 fi
 
 if [ "$target" == "" ]; then
-    fallback=$(basename "$source" .mkv)-track-${track}.wav
+    fallback=$(basename "$source" .mkv)-track-${track}.flac
     echo "[-] missing output, setting default: $fallback"
     target=$fallback
 fi
@@ -18,5 +18,5 @@ fi
 echo "[+] converting: $source"
 echo "[+] destination: $target"
 
-ffmpeg -i "$source" -vn -map 0:$track "$target"
+ffmpeg -i "$source" -vn -map 0:$track -acodec copy "$target"
 
